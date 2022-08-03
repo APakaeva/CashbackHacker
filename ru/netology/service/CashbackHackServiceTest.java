@@ -1,11 +1,13 @@
 package ru.netology.service;
 
+junit4
 import org.junit.Assert;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
 public class CashbackHackerServiceTest4 {
+
 
     @Test
     public void shouldCashbackHackerServiceTest() {
@@ -15,6 +17,7 @@ public class CashbackHackerServiceTest4 {
         int expected = 100;
         Assert.assertEquals(expected, actual);
     }
+    
     @Test
     public void shouldThousandCashbackHackerServiceTest() {
         CashbackHackerService service = new CashbackHackerService();
@@ -41,6 +44,5 @@ public class CashbackHackerServiceTest4 {
         int actual = service.remain(amount);
         int expected = 1001;
         Assert.assertEquals(expected, actual);
-
     }
 }
